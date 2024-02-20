@@ -1,7 +1,7 @@
 
 
 
-# ./inspect_test_dbs.py
+# ./inspect_dbs.py
 
 This script looks in a directory for sqllite files and outputs information on what database tables exists, and the number of rows.
 
@@ -9,6 +9,17 @@ This script looks in a directory for sqllite files and outputs information on wh
 
 ```bash
 ./inspect_test_dbs.py <directory>
+```
+## Example output
+```bash
+./inspect_dbs.py .
+Processing database: app.db
+Table: users, Row count: 2
+Table: categories, Row count: 0
+Table: accounts, Row count: 0
+Table: transactions, Row count: 0
+Processing database: auth.db
+Table: user, Row count: 2
 ```
 
 
