@@ -38,7 +38,7 @@ To make a script executable in Unix-like operating systems such as Linux or macO
 chmod u+x script.sh
 ```
 
-If you dont remember this, it will look like the following:
+If you do not remember this, you will encounter a "permission denied" error:
 
 ```bash
 markd@bluesky:scratch % echo "echo Hello" >> script.sh
