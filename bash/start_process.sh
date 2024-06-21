@@ -20,3 +20,13 @@ else
     $COMMAND > /dev/null 2>&1 &
 fi
 
+# Check if the specified process is running
+if pgrep -x "$PROCESS_NAME" > /dev/null; then
+    echo "Process $PROCESS_NAME is already running"
+else
+    # If the process is not running, start it
+    echo "Starting process $PROCESS_NAME"
+    # Run the specified command
+    $COMMAND > /dev/null 2>&1 &
+fi
+
